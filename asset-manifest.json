@@ -1,25 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.252f57c1.css",
-    "main.js": "/static/js/main.398a38ae.js",
+    "main.js": "/static/js/main.7caf06fc.js",
     "static/js/453.15a626a8.chunk.js": "/static/js/453.15a626a8.chunk.js",
     "static/media/waving.gif": "/static/media/waving.92bec61d306dcdc7dabd.gif",
     "static/media/cenec-logo.png": "/static/media/cenec-logo.b9aa4fddec5d607cdbd6.png",
     "static/media/mysql-logo.png": "/static/media/mysql-logo.167c88550478e6f0f85c.png",
     "static/media/USC-Village.jpeg": "/static/media/USC-Village.0f7530d7f3b837921b08.jpeg",
-    "static/media/nodejs-logo.png": "/static/media/nodejs-logo.a478ad352870413164d9.png",
     "static/media/rhea-profile - Copy.jpeg": "/static/media/rhea-profile - Copy.edca00fbba18662116a5.jpeg",
     "static/media/react-logo.png": "/static/media/react-logo.fa1dbf53094f3f4ffd43.png",
     "static/media/pyspark-logo.png": "/static/media/pyspark-logo.c549b3c4871cd73d718e.png",
-    "static/media/c-logo.png": "/static/media/c-logo.762e69af12b007cec6ee.png",
-    "static/media/aws-logo.png": "/static/media/aws-logo.312b227fc1a343cbbbda.png",
     "static/media/hadoop-logo.png": "/static/media/hadoop-logo.eb422ca89844ea77b2eb.png",
     "static/media/publications.png": "/static/media/publications.8cb00e46bd2085ce8041.png",
     "static/media/scikitlearn-logo.png": "/static/media/scikitlearn-logo.3f053f8e11181cafd860.png",
     "static/media/css-logo.png": "/static/media/css-logo.3248d40af37662660445.png",
     "static/media/flask-logo.png": "/static/media/flask-logo.e6868be9fd973bbc0268.png",
     "static/media/matplotlib-logo.png": "/static/media/matplotlib-logo.f5f6e0110a938c659e44.png",
-    "static/media/git-logo.png": "/static/media/git-logo.27b07d5e8469829d32d8.png",
     "static/media/vscode.png": "/static/media/vscode.b0bfc5f1621e71adbaee.png",
     "static/media/numpy-logo.png": "/static/media/numpy-logo.cef21beb0c3bd17c3208.png",
     "static/media/rhea-about.jpeg": "/static/media/rhea-about.a99c71ea225db3b3c106.jpeg",
@@ -37,11 +33,11 @@
     "static/media/linkedin-logo.png": "/static/media/linkedin-logo.d6e5807788285609d1e6.png",
     "index.html": "/index.html",
     "main.252f57c1.css.map": "/static/css/main.252f57c1.css.map",
-    "main.398a38ae.js.map": "/static/js/main.398a38ae.js.map",
+    "main.7caf06fc.js.map": "/static/js/main.7caf06fc.js.map",
     "453.15a626a8.chunk.js.map": "/static/js/453.15a626a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.252f57c1.css",
-    "static/js/main.398a38ae.js"
+    "static/js/main.7caf06fc.js"
   ]
 }
