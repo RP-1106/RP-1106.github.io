@@ -144,14 +144,14 @@ const Portfolio = () => {
 
   const skills = [
     { name: 'Python', url: 'https://www.python.org', icon: pythonLogo},
-    { name: 'C', url: 'https://en.wikipedia.org/wiki/C_(programming_language)', icon: cLogo },
-    { name: 'Java', url: 'https://www.java.com', icon: javaLogo },
+    /*{ name: 'C', url: 'https://en.wikipedia.org/wiki/C_(programming_language)', icon: cLogo },
+    { name: 'Java', url: 'https://www.java.com', icon: javaLogo },*/
     { name: 'HTML', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML', icon: htmlLogo },
     { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS', icon: cssLogo },
     { name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', icon: javascriptLogo },
     { name: 'MySQL', url: 'https://www.mysql.com', icon: mysqlLogo },
     { name: 'React', url: 'https://react.dev', icon: reactLogo },
-    { name: 'Node.js', url: 'https://nodejs.org', icon: nodejsLogo },
+    /*{ name: 'Node.js', url: 'https://nodejs.org', icon: nodejsLogo },*/
     { name: 'Numpy', url: 'https://numpy.org', icon: numpyLogo },
     { name: 'Pandas', url: 'https://pandas.pydata.org', icon: pandasLogo },
     { name: 'Matplotlib', url: 'https://matplotlib.org', icon: matplotlibLogo },
@@ -164,8 +164,8 @@ const Portfolio = () => {
     { name: 'PySpark', url: 'https://spark.apache.org/docs/latest/api/python/', icon: pysparkLogo },
     { name: 'Hadoop', url: 'https://hadoop.apache.org', icon: hadoopLogo },
     { name: 'Tableau', url: 'https://www.tableau.com', icon: tableauLogo },
-    { name: 'Git', url: 'https://git-scm.com', icon: gitLogo },
-    { name: 'AWS', url: 'https://aws.amazon.com', icon: awsLogo },
+    /*{ name: 'Git', url: 'https://git-scm.com', icon: gitLogo },*/
+    /*{ name: 'AWS', url: 'https://aws.amazon.com', icon: awsLogo },*/
     { name: 'VSCode', url: 'https://code.visualstudio.com', icon: vscodeLogo },
     { name: 'Jupyter Notebook', url: 'https://jupyter.org', icon: jupyterLogo },
   ];
