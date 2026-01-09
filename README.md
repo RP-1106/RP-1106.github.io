@@ -1,6 +1,6 @@
 ![Portfolio-Thumbnail](output/portfolio-thumbnail.png)
 
-Find my website at <a href="https://rp-1106.github.io" target="_blank">rp-1106.github.io</a>
+Find my portfolio website at <a href="https://rp-1106.github.io" target="_blank">rp-1106.github.io</a>
  
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
