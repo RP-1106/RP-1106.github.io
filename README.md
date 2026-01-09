@@ -1,4 +1,4 @@
-![Portfolio-Thumbnail](output/output1.png)
+![Portfolio-Thumbnail](output/portfolio-thumbnail.png)
 
 # Getting Started with Create React App
 
