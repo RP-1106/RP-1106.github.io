@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.252f57c1.css",
-    "main.js": "/static/js/main.7caf06fc.js",
+    "main.js": "/static/js/main.8929ac7c.js",
     "static/js/453.15a626a8.chunk.js": "/static/js/453.15a626a8.chunk.js",
     "static/media/waving.gif": "/static/media/waving.92bec61d306dcdc7dabd.gif",
     "static/media/cenec-logo.png": "/static/media/cenec-logo.b9aa4fddec5d607cdbd6.png",
@@ -33,11 +33,11 @@
     "static/media/linkedin-logo.png": "/static/media/linkedin-logo.d6e5807788285609d1e6.png",
     "index.html": "/index.html",
     "main.252f57c1.css.map": "/static/css/main.252f57c1.css.map",
-    "main.7caf06fc.js.map": "/static/js/main.7caf06fc.js.map",
+    "main.8929ac7c.js.map": "/static/js/main.8929ac7c.js.map",
     "453.15a626a8.chunk.js.map": "/static/js/453.15a626a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.252f57c1.css",
-    "static/js/main.7caf06fc.js"
+    "static/js/main.8929ac7c.js"
   ]
 }
