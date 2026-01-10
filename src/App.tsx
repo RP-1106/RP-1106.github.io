@@ -12,22 +12,22 @@ import linkedinLogo from './components/images/linkedin-logo.png';
 import locPin from './components/images/location-pin.png';
 
 import profileImage from './components/images/rhea-profile - Copy.jpeg';
-import awsLogo from './components/images/aws-logo.png';
-import cLogo from './components/images/c-logo.png';
+/*import awsLogo from './components/images/aws-logo.png';
+import cLogo from './components/images/c-logo.png';*/
 import cenecLogo from './components/images/cenec-logo.png';
 import cssLogo from './components/images/css-logo.png';
 import flaskLogo from './components/images/flask-logo.png';
-import gitLogo from './components/images/git-logo.png';
+/*import gitLogo from './components/images/git-logo.png';*/
 import hadoopLogo from './components/images/hadoop-logo.png';
 import htmlLogo from './components/images/html-5.png';
-import javaLogo from './components/images/java-logo.png';
+/*import javaLogo from './components/images/java-logo.png';*/
 import javascriptLogo from './components/images/javascript-logo.png';
 import kerasLogo from './components/images/keras-logo.png';
 import kpitLogo from './components/images/kpit-logo.png';
 import jupyterLogo from './components/images/logos-jupyter.png';
 import matplotlibLogo from './components/images/matplotlib-logo.png';
 import mysqlLogo from './components/images/mysql-logo.png';
-import nodejsLogo from './components/images/nodejs-logo.png';
+/*import nodejsLogo from './components/images/nodejs-logo.png';*/
 import numpyLogo from './components/images/numpy-logo.png';
 import pandasLogo from './components/images/pandas-logo.png';
 import pysparkLogo from './components/images/pyspark-logo.png';
@@ -45,6 +45,8 @@ import vscodeLogo from './components/images/vscode.png';
 import WavingHandGif from './components/gifs/waving.gif';
 import capstone from './components/images/capstone.png';
 import wordle from './components/images/wordle.png';
+
+/*const resumePDF = '/resume/Rhea_Pandita_Resume.pdf'*/
 
 const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -69,7 +71,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'projects', 'experience', 'publication', 'contact'];
+      const sections = ['home', 'about', 'skills', 'projects', 'experience', 'publication', 'resume','contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -93,6 +95,15 @@ const Portfolio = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/resume/Rhea_Pandita_Resume.pdf';
+    link.download = 'Rhea_Pandita_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -282,6 +293,12 @@ const Portfolio = () => {
                 {section}
               </button>
             ))}
+            <button
+              onClick={handleResumeDownload}
+              className="nav-link"
+            >
+              resume
+            </button>
           </div>
         </div>
       </nav>
@@ -430,6 +447,30 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
+
+      {/*<section id="resume" className="section resume-section">
+        <div className="container">
+          <h2 className="section-title center">Resume</h2>
+          <div className="resume-container">
+            <div className="resume-viewer">
+              <iframe
+                src={resumePDF}
+                title="Resume PDF"
+                className="resume-pdf"
+              />
+            </div>
+            <div className="resume-download">
+              <a 
+                href={resumePDF} 
+                download="Rhea_Pandita_Resume.pdf"
+                className="download-btn"
+              >
+                Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>*/}
 
       <section id="contact" className="section contact-section">
         <div className="container">
