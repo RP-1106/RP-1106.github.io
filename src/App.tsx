@@ -46,8 +46,6 @@ import WavingHandGif from './components/gifs/waving.gif';
 import capstone from './components/images/capstone.png';
 import wordle from './components/images/wordle.png';
 
-/*const resumePDF = '/resume/Rhea_Pandita_Resume.pdf'*/
-
 const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
