@@ -97,8 +97,8 @@ const Portfolio = () => {
 
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = '/resume/Rhea_Pandita_Resume.pdf';
-    link.download = 'Rhea_Pandita_Resume.pdf';
+    link.href = '/resume/Rhea_Pandita_Resume-v2.pdf';
+    link.download = 'Rhea_Pandita_Resume-v2.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
