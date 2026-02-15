@@ -333,8 +333,8 @@ const Portfolio = () => {
             <h2 className="section-title">Hey There!<img src={WavingHandGif} alt="waving hand" className="wave-emoji" /> </h2>
             <p className="about-text">
               I’m a Master’s student in Computer Science who wants to build reliable and interpretable AI systems.
-              I'm interested in research opportunities where I learn more about and focus on understanding and  <u>improving the reasoning behaviour of LLMs</u> through
-              empirical evaluation, robustness testing, and scalable benchmarking.
+              I'm interested in research opportunities where I learn more about and focus on <u>understanding and improving the reasoning behaviour of LLMs</u> through
+              empirical evaluation, robustness testing and benchmarking.
             </p>
             <br />
             <p className="about-text">
@@ -342,7 +342,7 @@ const Portfolio = () => {
             </p>
             <br />
             <p className="about-text">
-              <b>Interests:</b> <u>Machine Learning, NLP, LLM evaluation, and data-driven AI systems.</u>
+              <b>Interests:</b> <u>Machine Learning, NLP, LLM evaluation and data-driven AI systems.</u>
             </p>
             <br />
             <p className="about-text">
