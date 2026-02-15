@@ -34,7 +34,7 @@ import pysparkLogo from './components/images/pyspark-logo.png';
 import pythonLogo from './components/images/python-logo.png';
 import pytorchLogo from './components/images/pytorch-logo.png';
 
-import rheaAbout from './components/images/rhea-about.jpeg';
+import rheaAbout from './components/images/Linkedin-Profile-Picture - Copy.png';
 import reactLogo from './components/images/react-logo.png';
 import scikitLogo from './components/images/scikitlearn-logo.png';
 import streamlitLogo from './components/images/streamlit-logo.png';
@@ -332,23 +332,28 @@ const Portfolio = () => {
           <div className="about-content">
             <h2 className="section-title">Hey There!<img src={WavingHandGif} alt="waving hand" className="wave-emoji" /> </h2>
             <p className="about-text">
-              I'm a graduate student working towards my Master of Science (MS) degree in Computer Science.
-              I am passionate about leveraging AI to create impactful solutions.
-              My interests include Machine Learning, Natural Language Processing, Deep Learning and Data Science. 
-              As a Graduate Research Assistant at the USC CeNEC lab, I am benchmarking LLMs on causal and predictive reasoning tasks over human-action videos, testing their current limits.  
-              Beyond academics, I enjoy painting and travelling. <br /><br />
-
-              <b>
-              University of Southern California (USC) [Aug 2025 - Present]
-              <ul className="about-bullets">
-                  <li>Master of Science in Computer Science</li>
-              </ul>
-              </b>
-              Shiv Nadar University Chennai (SNU) [2021 - 2025]
-              <ul className="about-bullets">
-                <li>Bachelor of Technology in Artificial Intelligence and Data Science</li>
-              </ul>
+              I’m a Master’s student in Computer Science who wants to build reliable and interpretable AI systems.
+              I'm interested in research opportunities where I learn more about and focus on understanding and  <u>improving the reasoning behaviour of LLMs</u> through
+              empirical evaluation, robustness testing, and scalable benchmarking.
             </p>
+            <br />
+            <p className="about-text">
+              As a Graduate Research Assistant at the USC CeNEC Lab, I benchmark LLMs on causal and predictive reasoning tasks over human-action videos to study their current limitations.
+            </p>
+            <br />
+            <p className="about-text">
+              <b>Interests:</b> <u>Machine Learning, NLP, LLM evaluation, and data-driven AI systems.</u>
+            </p>
+            <br />
+            <p className="about-text">
+              Outside of academics, I enjoy painting and traveling.
+            </p>
+            <br />
+            <div className="education">
+              <p className="about-text"><b>Education : </b></p>
+              <p className="about-text"><b>MS Computer Science : University of Southern California (2025–Present)</b></p>
+              <p className="about-text">B.Tech AI & Data Science : Shiv Nadar University Chennai (2021–2025)</p>
+            </div >
           </div>
         </div>
       </section>
@@ -374,7 +379,7 @@ const Portfolio = () => {
 
       <section id="projects" className="section projects-section">
         <div className="container">
-          <h2 className="section-title center">Recent Projects</h2>
+          <h2 className="section-title center">Highlighted Projects</h2>
           <div className="projects-grid">
             {projects.map((project, idx) => (
               <div key={idx} className="project-card">
