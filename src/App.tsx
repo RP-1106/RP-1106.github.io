@@ -97,8 +97,8 @@ const Portfolio = () => {
 
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = '/resume/Rhea_Pandita_Resume-v2.pdf';
-    link.download = 'Rhea_Pandita_Resume-v2.pdf';
+    link.href = '/resume/Rhea__Pandita__Resume.pdf';
+    link.download = 'Rhea__Pandita__Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -227,8 +227,9 @@ const Portfolio = () => {
       startDate: 'Aug 2025',
       endDate: 'Present',
       bullets: [
-        'Addressing the challenge of evaluating LLMs on causal and predictive reasoning over human-action videos.',
-        'Planning a pipeline to benchmark LLMs on these causal and predictive reasoning tasks',
+        'Built a rate-limited LLM inference pipeline (deque-based scheduler + retry/backoff) enabling reliable batch evaluation across GPT-OSS-120B, Claude-Opus-4.x, LLaMA-3.3-70B, and Qwen-32B.',
+        'Architected a modular evaluation framework (prompt orchestration, API parsing, structured logging), achieving 98% output extraction across 158 annotated multimodal samples.',
+        'Developed automated logging system (Python, Pandas) tracking per-sample outputs and aggregate metrics for reproducible cross-model benchmarking at scale',
       ],
       link: 'https://dornsife.usc.edu/cenec/content/'
     },
@@ -239,8 +240,8 @@ const Portfolio = () => {
       startDate: 'June 2024',
       endDate: 'Aug 2024',
       bullets: [
-        'Parsed IGES and STEP CAD files using Python, extracting structured geometric parameters for downstream analysis',
-        'Developed Python algorithms to classify & map 2D shapes to 3D counterparts',
+        'Engineered a Python-based CAD processing pipeline to parse IGES/STEP files and extract structured geometry for automated backend modification of 3D designs.',
+        'Built geometric reconstruction algorithms mapping 2D shapes to 3D counterparts, enabling scalable CAD parameter editing across multiple files.',
       ]
     },
     {
@@ -251,9 +252,8 @@ const Portfolio = () => {
       endDate: 'Aug 2023',
       bullets: [
         'Co-authored and presented a paper titled "Accelerating Automotive Design".',
-        'Delivered a proof-of-concept generative AI workflow demonstrating potential to accelerate automotive design cycles from months to weeks.',
-        'Implemented Stable Diffusion text-to-image pipeline for car design, cutting sketch-to-3D from months to weeks.',
-        'Built image-to-3D mesh reconstruction workflow, outputting .obj models for automotive prototyping.'
+        'Built a text-to-image generation system using Stable Diffusion v1-4 (HuggingFace Diffusers), leveraging CLIP text encoder, latent U-Net, and VAE to generate automotive design concepts from natural language prompts.',
+        'Developed an image-to-3D pipeline using GLPN (vinvino02/glpn-nyu) (monocular depth estimation) and Open3D (Poisson reconstruction) to output .obj meshes for rapid prototyping.',
       ]
     }
   ];
