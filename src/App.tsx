@@ -45,6 +45,7 @@ import vscodeLogo from './components/images/vscode.png';
 import WavingHandGif from './components/gifs/waving.gif';
 import capstone from './components/images/capstone.png';
 import wordle from './components/images/wordle.png';
+import grids from './components/images/GRIDS-output.png';
 
 const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -180,6 +181,20 @@ const Portfolio = () => {
   ];
 
   const projects = [
+    {
+      title: 'ICU Deterioration Prediction System',
+      description: 'An interpretable multimodal ML system for early ICU respiratory failure prediction, combining clinical notes, lab trends, and chest X-ray embeddings across 91K patient stays.',
+      image: grids,
+      github: 'https://github.com/ayushdeo/ICU-MM',
+      techStack: [
+        { name: 'Python', logo: pythonLogo },
+        { name: 'Streamlit', logo: streamlitLogo },
+        { name: 'Numpy', logo: numpyLogo },
+        { name: 'Pandas', logo: pandasLogo },
+        { name: 'PyTorch', logo: pytorchLogo },
+        { name: 'scikit-learn', logo: scikitLogo },
+      ]
+    },
     {
       title: 'AI-Assisted Personal Finance Management System',
       description: 'A lightweight, 𝗽𝗿𝗶𝘃𝗮𝗰𝘆-𝗳𝗼𝗰𝘂𝘀𝗲𝗱 financial management tool with intelligent features to help you make better financial decisions without requiring external account integration. ',
