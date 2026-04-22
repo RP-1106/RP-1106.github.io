@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f757957b.css",
-    "main.js": "/static/js/main.3e23914a.js",
+    "main.js": "/static/js/main.94144e15.js",
     "static/js/453.15a626a8.chunk.js": "/static/js/453.15a626a8.chunk.js",
     "static/media/waving.gif": "/static/media/waving.92bec61d306dcdc7dabd.gif",
     "static/media/Linkedin-Profile-Picture - Copy.png": "/static/media/Linkedin-Profile-Picture - Copy.5c3957569348a420889f.png",
@@ -9,6 +9,7 @@
     "static/media/mysql-logo.png": "/static/media/mysql-logo.167c88550478e6f0f85c.png",
     "static/media/USC-Village.jpeg": "/static/media/USC-Village.0f7530d7f3b837921b08.jpeg",
     "static/media/rhea-profile - Copy.jpeg": "/static/media/rhea-profile - Copy.edca00fbba18662116a5.jpeg",
+    "static/media/GRIDS-output.png": "/static/media/GRIDS-output.9549cb3ac427648f0912.png",
     "static/media/react-logo.png": "/static/media/react-logo.fa1dbf53094f3f4ffd43.png",
     "static/media/pyspark-logo.png": "/static/media/pyspark-logo.c549b3c4871cd73d718e.png",
     "static/media/hadoop-logo.png": "/static/media/hadoop-logo.eb422ca89844ea77b2eb.png",
@@ -33,11 +34,11 @@
     "static/media/linkedin-logo.png": "/static/media/linkedin-logo.d6e5807788285609d1e6.png",
     "index.html": "/index.html",
     "main.f757957b.css.map": "/static/css/main.f757957b.css.map",
-    "main.3e23914a.js.map": "/static/js/main.3e23914a.js.map",
+    "main.94144e15.js.map": "/static/js/main.94144e15.js.map",
     "453.15a626a8.chunk.js.map": "/static/js/453.15a626a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f757957b.css",
-    "static/js/main.3e23914a.js"
+    "static/js/main.94144e15.js"
   ]
 }
