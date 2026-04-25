@@ -46,6 +46,7 @@ import WavingHandGif from './components/gifs/waving.gif';
 import capstone from './components/images/capstone.png';
 import wordle from './components/images/wordle.png';
 import grids from './components/images/GRIDS-output.png';
+import movierec from './components/images/movie-recommendation.png';
 
 const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -181,6 +182,19 @@ const Portfolio = () => {
   ];
 
   const projects = [
+     {
+      title: 'Engagement-Aware Movie Recommendation System',
+      description: 'Leverage content similarity, user engagement patterns and contextual embeddings to improve sequential movie recommendations and maximize sustained interaction',
+      image: movierec,
+      github: 'https://github.com/RP-1106/ML-Project-Movie-Recommendation',
+      techStack: [
+        { name: 'Python', logo: pythonLogo },
+        { name: 'Numpy', logo: numpyLogo },
+        { name: 'Pandas', logo: pandasLogo },
+        { name: 'PyTorch', logo: pytorchLogo },
+        { name: 'scikit-learn', logo: scikitLogo },
+      ]
+    },
     {
       title: 'ICU Deterioration Prediction System',
       description: 'An interpretable multimodal ML system for early ICU respiratory failure prediction, combining clinical notes, lab trends, and chest X-ray embeddings across 91K patient stays.',
@@ -392,7 +406,7 @@ const Portfolio = () => {
 
       <section id="projects" className="section projects-section">
         <div className="container">
-          <h2 className="section-title center">Highlighted Projects</h2>
+          <h2 className="section-title center">Projects</h2>
           <div className="projects-grid">
             {projects.map((project, idx) => (
               <div key={idx} className="project-card">
