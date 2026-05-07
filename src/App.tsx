@@ -263,7 +263,7 @@ const Portfolio = () => {
       link: 'https://dornsife.usc.edu/cenec/content/'
     },
     {
-      role: 'Trainee',
+      role: 'Machine Learning Intern',
       company: 'KPIT Technologies',
       logo: kpitLogo,
       startDate: 'June 2024',
@@ -274,7 +274,7 @@ const Portfolio = () => {
       ]
     },
     {
-      role: 'Trainee',
+      role: 'Machine Learning Intern',
       company: 'KPIT Technologies',
       logo: kpitLogo,
       startDate: 'May 2023',
