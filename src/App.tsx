@@ -182,6 +182,23 @@ const Portfolio = () => {
   ];
 
   const projects = [
+    {
+      title: 'AI-Assisted Personal Finance Management System',
+      description: 'Deployed a privacy-focused RAG-based financial management tool on Streamlit Cloud. Migrated vector retrieval from ChromaDB to FAISS with LLaMA-3.3-70B, reducing response latency 98% (60s → 0.57s). Expanded knowledge base to 379 entries; achieved faithfulness 0.95 and semantic similarity 0.73 on evaluation.',
+      image: capstone,
+      github: 'https://github.com/RP-1106/capstone-project',
+      demo: 'https://paisavault-capstone-project.streamlit.app',
+      originalRepo: 'https://github.com/shrutishrinivasan/capstone-project',
+      techStack: [
+        { name: 'Python', logo: pythonLogo },
+        { name: 'Streamlit', logo: streamlitLogo },
+        { name: 'MySQL', logo: mysqlLogo },
+        { name: 'Numpy', logo: numpyLogo },
+        { name: 'Pandas', logo: pandasLogo },
+        { name: 'PyTorch', logo: pytorchLogo },
+        { name: 'scikit-learn', logo: scikitLogo },
+      ]
+    },
      {
       title: 'Engagement-Aware Movie Recommendation System',
       description: 'Leverage content similarity, user engagement patterns and contextual embeddings to improve sequential movie recommendations and maximize sustained interaction',
@@ -207,26 +224,6 @@ const Portfolio = () => {
         { name: 'Pandas', logo: pandasLogo },
         { name: 'PyTorch', logo: pytorchLogo },
         { name: 'scikit-learn', logo: scikitLogo },
-      ]
-    },
-    {
-      title: 'AI-Assisted Personal Finance Management System',
-      description: 'A lightweight, 𝗽𝗿𝗶𝘃𝗮𝗰𝘆-𝗳𝗼𝗰𝘂𝘀𝗲𝗱 financial management tool with intelligent features to help you make better financial decisions without requiring external account integration. ',
-      image: capstone,
-      github: 'https://github.com/shrutishrinivasan/capstone-project',
-      techStack: [
-        { name: 'Python', logo: pythonLogo },
-        { name: 'Streamlit', logo: streamlitLogo },
-        { name: 'HTML', logo: htmlLogo },
-        { name: 'CSS', logo: cssLogo },
-        { name: 'MySQL', logo: mysqlLogo },
-        { name: 'Tensorflow', logo: tensorflowLogo },
-        { name: 'Numpy', logo: numpyLogo },
-        { name: 'Keras', logo: kerasLogo },
-        { name: 'Pandas', logo: pandasLogo },
-        { name: 'PyTorch', logo: pytorchLogo },
-        { name: 'scikit-learn', logo: scikitLogo },
-        { name: 'Matplotlib', logo: matplotlibLogo }
       ]
     },
     {
@@ -428,7 +425,21 @@ const Portfolio = () => {
                       ))}
                     </div>
                   )}
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link"><Github size={24} />View on Github</a>
+                  <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
+                      <Github size={24} />Github
+                    </a>
+                    {project.demo && (
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link">
+                        🌐 Live Demo
+                      </a>
+                    )}
+                    {project.originalRepo && (
+                      <a href={project.originalRepo} target="_blank" rel="noopener noreferrer" className="project-link" style={{ fontSize: '0.8rem', opacity: 0.7 }}>
+                        <Github size={18} />Original Repo
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
