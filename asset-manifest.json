@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.f757957b.css",
-    "main.js": "/static/js/main.55ff82b2.js",
+    "main.js": "/static/js/main.ac265f91.js",
     "static/js/453.15a626a8.chunk.js": "/static/js/453.15a626a8.chunk.js",
+    "static/media/netflx-thumbnail.png": "/static/media/netflx-thumbnail.a93d909160d8e1a70a31.png",
     "static/media/waving.gif": "/static/media/waving.92bec61d306dcdc7dabd.gif",
     "static/media/Linkedin-Profile-Picture - Copy.png": "/static/media/Linkedin-Profile-Picture - Copy.5c3957569348a420889f.png",
     "static/media/cenec-logo.png": "/static/media/cenec-logo.b9aa4fddec5d607cdbd6.png",
     "static/media/mysql-logo.png": "/static/media/mysql-logo.167c88550478e6f0f85c.png",
     "static/media/USC-Village.jpeg": "/static/media/USC-Village.0f7530d7f3b837921b08.jpeg",
-    "static/media/movie-recommendation.png": "/static/media/movie-recommendation.976d97d8a3f22c763dcb.png",
     "static/media/rhea-profile - Copy.jpeg": "/static/media/rhea-profile - Copy.edca00fbba18662116a5.jpeg",
     "static/media/GRIDS-output.png": "/static/media/GRIDS-output.9549cb3ac427648f0912.png",
     "static/media/react-logo.png": "/static/media/react-logo.fa1dbf53094f3f4ffd43.png",
@@ -18,8 +18,10 @@
     "static/media/css-logo.png": "/static/media/css-logo.3248d40af37662660445.png",
     "static/media/flask-logo.png": "/static/media/flask-logo.e6868be9fd973bbc0268.png",
     "static/media/matplotlib-logo.png": "/static/media/matplotlib-logo.f5f6e0110a938c659e44.png",
+    "static/media/docker-logo.png": "/static/media/docker-logo.bc5de29acd8677ae4414.png",
     "static/media/vscode.png": "/static/media/vscode.b0bfc5f1621e71adbaee.png",
     "static/media/numpy-logo.png": "/static/media/numpy-logo.cef21beb0c3bd17c3208.png",
+    "static/media/kafka-logo.png": "/static/media/kafka-logo.a3b09d3c565273264e65.png",
     "static/media/capstone.png": "/static/media/capstone.ab2afa62c7d721638a28.png",
     "static/media/publications.png": "/static/media/publications.73b765263faebe44966e.png",
     "static/media/pandas-logo.png": "/static/media/pandas-logo.fea562ff7f4b752fc4dc.png",
@@ -35,11 +37,11 @@
     "static/media/linkedin-logo.png": "/static/media/linkedin-logo.d6e5807788285609d1e6.png",
     "index.html": "/index.html",
     "main.f757957b.css.map": "/static/css/main.f757957b.css.map",
-    "main.55ff82b2.js.map": "/static/js/main.55ff82b2.js.map",
+    "main.ac265f91.js.map": "/static/js/main.ac265f91.js.map",
     "453.15a626a8.chunk.js.map": "/static/js/453.15a626a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f757957b.css",
-    "static/js/main.55ff82b2.js"
+    "static/js/main.ac265f91.js"
   ]
 }
