@@ -41,12 +41,16 @@ import streamlitLogo from './components/images/streamlit-logo.png';
 import tableauLogo from './components/images/tableau-logo.png';
 import tensorflowLogo from './components/images/tensorflow-logo.png';
 import vscodeLogo from './components/images/vscode.png';
+import dockerLogo from './components/images/docker-logo.png';
+import fastapiLogo from './components/images/fastapi-logo.png';
+import kafkaLogo from './components/images/kafka-logo.png';
 
 import WavingHandGif from './components/gifs/waving.gif';
 import capstone from './components/images/capstone.png';
 import wordle from './components/images/wordle.png';
 import grids from './components/images/GRIDS-output.png';
-import movierec from './components/images/movie-recommendation.png';
+/*import movierec from './components/images/movie-recommendation.png';*/
+import netflx from './components/images/netflx-thumbnail.png';
 
 const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -183,6 +187,25 @@ const Portfolio = () => {
 
   const projects = [
     {
+      title: 'Netflx: AI-Powered Streaming Recommendation System',
+      description: 'A movie recommendation system that leverages BERT4Rec and SASRec',
+      image: netflx,
+      github: 'https://github.com/RP-1106/Netflix-Recommendation-System',
+
+
+      techStack: [
+        { name: 'Python', logo: pythonLogo },
+        { name: 'React', logo: reactLogo },
+        { name: 'Docker', logo: dockerLogo },
+        { name: 'FastAPI', logo: fastapiLogo },
+        { name: 'Kafka', logo: kafkaLogo },
+        { name: 'Numpy', logo: numpyLogo },
+        { name: 'Pandas', logo: pandasLogo },
+        { name: 'PyTorch', logo: pytorchLogo },
+        { name: 'scikit-learn', logo: scikitLogo },
+      ]
+    },
+    {
       title: 'AI-Assisted Personal Finance Management System',
       description: 'Deployed a privacy-focused RAG-based financial management tool on Streamlit Cloud. Migrated vector retrieval from ChromaDB to FAISS with LLaMA-3.3-70B, reducing response latency 98% (60s → 0.57s). Expanded knowledge base to 379 entries; achieved faithfulness 0.95 and semantic similarity 0.73 on evaluation.',
       image: capstone,
@@ -199,6 +222,7 @@ const Portfolio = () => {
         { name: 'scikit-learn', logo: scikitLogo },
       ]
     },
+    /*
      {
       title: 'Engagement-Aware Movie Recommendation System',
       description: 'Leverage content similarity, user engagement patterns and contextual embeddings to improve sequential movie recommendations and maximize sustained interaction',
@@ -212,6 +236,7 @@ const Portfolio = () => {
         { name: 'scikit-learn', logo: scikitLogo },
       ]
     },
+    */
     {
       title: 'ICU Deterioration Prediction System',
       description: 'An interpretable multimodal ML system for early ICU respiratory failure prediction, combining clinical notes, lab trends, and chest X-ray embeddings across 91K patient stays.',
