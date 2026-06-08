@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.f757957b.css",
-    "main.js": "/static/js/main.ac265f91.js",
+    "main.js": "/static/js/main.94f48b11.js",
     "static/js/453.15a626a8.chunk.js": "/static/js/453.15a626a8.chunk.js",
-    "static/media/netflx-thumbnail.png": "/static/media/netflx-thumbnail.a93d909160d8e1a70a31.png",
+    "static/media/streamora-thumbnail.png": "/static/media/streamora-thumbnail.1705edbb75345edc6c1a.png",
     "static/media/waving.gif": "/static/media/waving.92bec61d306dcdc7dabd.gif",
     "static/media/Linkedin-Profile-Picture - Copy.png": "/static/media/Linkedin-Profile-Picture - Copy.5c3957569348a420889f.png",
     "static/media/cenec-logo.png": "/static/media/cenec-logo.b9aa4fddec5d607cdbd6.png",
@@ -37,11 +37,11 @@
     "static/media/linkedin-logo.png": "/static/media/linkedin-logo.d6e5807788285609d1e6.png",
     "index.html": "/index.html",
     "main.f757957b.css.map": "/static/css/main.f757957b.css.map",
-    "main.ac265f91.js.map": "/static/js/main.ac265f91.js.map",
+    "main.94f48b11.js.map": "/static/js/main.94f48b11.js.map",
     "453.15a626a8.chunk.js.map": "/static/js/453.15a626a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f757957b.css",
-    "static/js/main.ac265f91.js"
+    "static/js/main.94f48b11.js"
   ]
 }
