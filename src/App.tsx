@@ -50,7 +50,7 @@ import capstone from './components/images/capstone.png';
 import wordle from './components/images/wordle.png';
 import grids from './components/images/GRIDS-output.png';
 /*import movierec from './components/images/movie-recommendation.png';*/
-import netflx from './components/images/netflx-thumbnail.png';
+import streamora from './components/images/streamora-thumbnail.png';
 
 const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -187,10 +187,10 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: 'Netflx: AI-Powered Streaming Recommendation System',
-      description: 'A movie recommendation system that leverages BERT4Rec and SASRec',
-      image: netflx,
-      github: 'https://github.com/RP-1106/Netflix-Recommendation-System',
+      title: 'Streamora: AI-Powered Streaming Recommendation System',
+      description: 'A full-stack AI-powered streaming recommendation platform built with transformer-based sequential models, multi-profile accounts, and real-time Watch Together sessions.',
+      image: streamora,
+      github: 'https://github.com/RP-1106/Streamora-Recommendation-System',
 
 
       techStack: [
