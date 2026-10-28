@@ -12,25 +12,25 @@ import linkedinLogo from './components/images/linkedin-logo.png';
 import locPin from './components/images/location-pin.png';
 
 import profileImage from './components/images/rhea-profile - Copy.jpeg';
-/*import awsLogo from './components/images/aws-logo.png';
-import cLogo from './components/images/c-logo.png';*/
+import awsLogo from './components/images/aws-logo.png';
+import cLogo from './components/images/c-logo.png';
 import cenecLogo from './components/images/cenec-logo.png';
 import cssLogo from './components/images/css-logo.png';
 import flaskLogo from './components/images/flask-logo.png';
-/*import gitLogo from './components/images/git-logo.png';*/
-import hadoopLogo from './components/images/hadoop-logo.png';
+import gitLogo from './components/images/git-logo.png';
+/*import hadoopLogo from './components/images/hadoop-logo.png';*/
 import htmlLogo from './components/images/html-5.png';
 /*import javaLogo from './components/images/java-logo.png';*/
 import javascriptLogo from './components/images/javascript-logo.png';
-import kerasLogo from './components/images/keras-logo.png';
+/*import kerasLogo from './components/images/keras-logo.png';*/
 import kpitLogo from './components/images/kpit-logo.png';
 import jupyterLogo from './components/images/logos-jupyter.png';
 import matplotlibLogo from './components/images/matplotlib-logo.png';
 import mysqlLogo from './components/images/mysql-logo.png';
-/*import nodejsLogo from './components/images/nodejs-logo.png';*/
+import nodejsLogo from './components/images/nodejs-logo.png';
 import numpyLogo from './components/images/numpy-logo.png';
 import pandasLogo from './components/images/pandas-logo.png';
-import pysparkLogo from './components/images/pyspark-logo.png';
+/*import pysparkLogo from './components/images/pyspark-logo.png';*/
 import pythonLogo from './components/images/python-logo.png';
 import pytorchLogo from './components/images/pytorch-logo.png';
 
@@ -38,19 +38,26 @@ import rheaAbout from './components/images/Linkedin-Profile-Picture - Copy.png';
 import reactLogo from './components/images/react-logo.png';
 import scikitLogo from './components/images/scikitlearn-logo.png';
 import streamlitLogo from './components/images/streamlit-logo.png';
-import tableauLogo from './components/images/tableau-logo.png';
+/*import tableauLogo from './components/images/tableau-logo.png';
 import tensorflowLogo from './components/images/tensorflow-logo.png';
-import vscodeLogo from './components/images/vscode.png';
+import vscodeLogo from './components/images/vscode.png';*/
 import dockerLogo from './components/images/docker-logo.png';
 import fastapiLogo from './components/images/fastapi-logo.png';
 import kafkaLogo from './components/images/kafka-logo.png';
 
 import WavingHandGif from './components/gifs/waving.gif';
 import capstone from './components/images/capstone.png';
-import wordle from './components/images/wordle.png';
+/*import wordle from './components/images/wordle.png';*/
 import grids from './components/images/GRIDS-output.png';
 /*import movierec from './components/images/movie-recommendation.png';*/
 import streamora from './components/images/streamora-thumbnail.png';
+import multiagent from './components/images/multiagent-logo1.png';
+import mcpagent from './components/images/mcpserver-logo2.png';
+import redisLogo from './components/images/redis-logo.png';
+import typescriptLogo from './components/images/typescript-logo.png';
+import langchainLogo from './components/images/langchain-logo.png';
+import huggingfaceLogo from './components/images/huggingface-logo.png';
+import gcpLogo from './components/images/google-cloud-logo.png';
 
 const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -101,14 +108,18 @@ const Portfolio = () => {
     }
   };
 
-  const handleResumeDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/resume/Rhea__Pandita__Resume.pdf';
-    link.download = 'Rhea__Pandita__Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const handleResumeDownload = (variant: 'ai' | 'swe') => {
+  const files = {
+    ai:  { href: '/resume/Rhea_Pandita_Resume_AI.pdf',  name: 'Rhea_Pandita_Resume_AI.pdf' },
+    swe: { href: '/resume/Rhea_Pandita_Resume_SWE_FDE.pdf', name: 'Rhea_Pandita_Resume_SWE_FDE.pdf' },
   };
+  const link = document.createElement('a');
+  link.href = files[variant].href;
+  link.download = files[variant].name;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -158,40 +169,76 @@ const Portfolio = () => {
   };
 
   const skills = [
-    { name: 'Python', url: 'https://www.python.org', icon: pythonLogo},
-    /*{ name: 'C', url: 'https://en.wikipedia.org/wiki/C_(programming_language)', icon: cLogo },
-    { name: 'Java', url: 'https://www.java.com', icon: javaLogo },*/
-    { name: 'HTML', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML', icon: htmlLogo },
-    { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS', icon: cssLogo },
-    { name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', icon: javascriptLogo },
-    { name: 'MySQL', url: 'https://www.mysql.com', icon: mysqlLogo },
-    { name: 'React', url: 'https://react.dev', icon: reactLogo },
-    /*{ name: 'Node.js', url: 'https://nodejs.org', icon: nodejsLogo },*/
-    { name: 'Numpy', url: 'https://numpy.org', icon: numpyLogo },
-    { name: 'Pandas', url: 'https://pandas.pydata.org', icon: pandasLogo },
-    { name: 'Matplotlib', url: 'https://matplotlib.org', icon: matplotlibLogo },
-    { name: 'Keras', url: 'https://keras.io', icon: kerasLogo },
-    { name: 'Pytorch', url: 'https://pytorch.org', icon: pytorchLogo },
-    { name: 'Scikit-learn', url: 'https://scikit-learn.org', icon: scikitLogo },
-    { name: 'Tensorflow', url: 'https://www.tensorflow.org', icon: tensorflowLogo },
-    { name: 'Flask', url: 'https://flask.palletsprojects.com', icon: flaskLogo },
-    { name: 'Streamlit', url: 'https://streamlit.io', icon: streamlitLogo },
-    { name: 'PySpark', url: 'https://spark.apache.org/docs/latest/api/python/', icon: pysparkLogo },
-    { name: 'Hadoop', url: 'https://hadoop.apache.org', icon: hadoopLogo },
-    { name: 'Tableau', url: 'https://www.tableau.com', icon: tableauLogo },
-    /*{ name: 'Git', url: 'https://git-scm.com', icon: gitLogo },*/
-    /*{ name: 'AWS', url: 'https://aws.amazon.com', icon: awsLogo },*/
-    { name: 'VSCode', url: 'https://code.visualstudio.com', icon: vscodeLogo },
-    { name: 'Jupyter Notebook', url: 'https://jupyter.org', icon: jupyterLogo },
+    { name: 'Python', url: 'https://www.python.org', icon: pythonLogo },
+  { name: 'C', url: 'https://en.wikipedia.org/wiki/C_(programming_language)', icon: cLogo },
+  { name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', icon: javascriptLogo },
+  { name: 'HTML', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML', icon: htmlLogo },
+  { name: 'CSS', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS', icon: cssLogo },
+  { name: 'MySQL', url: 'https://www.mysql.com', icon: mysqlLogo },
+  { name: 'React', url: 'https://react.dev', icon: reactLogo },
+  { name: 'Node.js', url: 'https://nodejs.org', icon: nodejsLogo },
+  { name: 'FastAPI', url: 'https://fastapi.tiangolo.com', icon: fastapiLogo },
+  { name: 'Flask', url: 'https://flask.palletsprojects.com', icon: flaskLogo },
+  { name: 'Docker', url: 'https://www.docker.com', icon: dockerLogo },
+  { name: 'Kafka', url: 'https://kafka.apache.org', icon: kafkaLogo },
+  { name: 'AWS', url: 'https://aws.amazon.com', icon: awsLogo },
+  { name: 'Git', url: 'https://git-scm.com', icon: gitLogo },
+  { name: 'PyTorch', url: 'https://pytorch.org', icon: pytorchLogo },
+  { name: 'Scikit-learn', url: 'https://scikit-learn.org', icon: scikitLogo },
+  { name: 'Numpy', url: 'https://numpy.org', icon: numpyLogo },
+  { name: 'Pandas', url: 'https://pandas.pydata.org', icon: pandasLogo },
+  { name: 'Matplotlib', url: 'https://matplotlib.org', icon: matplotlibLogo },
+  { name: 'Streamlit', url: 'https://streamlit.io', icon: streamlitLogo },
+  { name: 'Jupyter Notebook', url: 'https://jupyter.org', icon: jupyterLogo },
+  { name: 'LangChain', url: 'https://www.langchain.com', icon: langchainLogo },
+  { name: 'TypeScript', url: 'https://www.typescriptlang.org', icon: typescriptLogo },
+  { name: 'Redis', url: 'https://redis.io', icon: redisLogo },
+  { name: 'Google Cloud', url: 'https://cloud.google.com', icon: gcpLogo },
+  { name: 'HuggingFace', url: 'https://huggingface.co', icon: huggingfaceLogo },
+    /*{ name: 'VSCode', url: 'https://code.visualstudio.com', icon: vscodeLogo },*/
+    /*{ name: 'PySpark', url: 'https://spark.apache.org/docs/latest/api/python/', icon: pysparkLogo },*/
+    /*{ name: 'Hadoop', url: 'https://hadoop.apache.org', icon: hadoopLogo },*/
+    /*{ name: 'Tableau', url: 'https://www.tableau.com', icon: tableauLogo },*/
+    /*{ name: 'Tensorflow', url: 'https://www.tensorflow.org', icon: tensorflowLogo },*/
+    /*{ name: 'Keras', url: 'https://keras.io', icon: kerasLogo },*/
+    /*{ name: 'Java', url: 'https://www.java.com', icon: javaLogo },*/
+
   ];
 
-  const projects = [
+  type TechItem = { name: string; logo: string };
+
+  type Project = {
+  title: string;
+  description: string;
+  image: string;
+  github?: string;
+  demo?: string;
+  demoVideo?: string;
+  originalRepo?: string;
+  accessNote?: string;
+  techStack?: TechItem[];
+};
+
+  const projects: Project[] = [
+    {
+    title: 'Multi-Agent Immigration Policy Assistant',
+    description: 'A LangGraph supervisor routing research, data and summary agents over a Chroma index of 17 federal regulatory sources, with LLM routing across Gemini Flash and GPT-5.4 and traced fallback when a provider fails. Scored 0.95 faithfulness and 0.84–0.89 context precision on RAGAS across 24 reference-checked questions, at $0.003 per simple query. Caught a regulation that corpus-only answers presented as current but a court had blocked — and found that recency prompting had made the error worse.',
+    image: multiagent,              
+    /*demoVideo: 'https://youtu.be/YOUR-UNLISTED-ID',*/
+    accessNote: 'Source code and live deployment available to employers on request: rheasuneelpandita@gmail.com',
+    techStack: [
+      { name: 'Python', logo: pythonLogo },
+      { name: 'FastAPI', logo: fastapiLogo },
+      { name: 'Docker', logo: dockerLogo },
+      { name: 'Pandas', logo: pandasLogo },
+    ]
+  },
     {
       title: 'Streamora: AI-Powered Streaming Recommendation System',
       description: 'A full-stack AI-powered streaming recommendation platform built with transformer-based sequential models, multi-profile accounts, and real-time Watch Together sessions.',
       image: streamora,
       github: 'https://github.com/RP-1106/Streamora-Recommendation-System',
-      demo: 'https://youtu.be/6JtSAc9Zq68',
+      demoVideo: 'https://youtu.be/6JtSAc9Zq68',
 
       techStack: [
         { name: 'Python', logo: pythonLogo },
@@ -222,6 +269,32 @@ const Portfolio = () => {
         { name: 'scikit-learn', logo: scikitLogo },
       ]
     },
+    {
+      title: 'ICU Respiratory Deterioration Prediction',
+      description: 'A leakage-safe landmark prediction framework on MIMIC-IV (91K ICU stays, 35.5M lab records) forecasting new advanced respiratory support at 3/6/12h horizons. Identified an outcome-dependent data cutoff that made window length a proxy for the label, then rebuilt the pipeline honestly — test AUROC 0.83/0.77/0.72, AUPRC 2.4–3.6× chance.',
+      image: grids,
+      github: 'https://github.com/RP-1106/ICU-MM-Deterioration',   
+      originalRepo: 'https://github.com/ayushdeo/ICU-MM',
+      techStack: [
+        { name: 'Python', logo: pythonLogo },
+        { name: 'PyTorch', logo: pytorchLogo },
+        { name: 'Numpy', logo: numpyLogo },
+        { name: 'Pandas', logo: pandasLogo },
+        { name: 'scikit-learn', logo: scikitLogo },
+      ]
+    },
+    {
+      title: 'Tool-Using MCP Agent Service',
+      description: 'A LangGraph ReAct agent on Cloud Run reaching three MCP servers (filesystem over stdio, Tavily and GitHub over streamable HTTP) with per-server tool allowlists, bounded timeouts and retries, and a guard that classifies every failure mode. Covered by 18 offline tests including a purpose-built fault-injection server that crashes mid-call, disappears after discovery and returns schema-breaking results.',
+      image: mcpagent,               
+      /*demoVideo: 'https://youtu.be/YOUR-UNLISTED-ID',*/
+      accessNote: 'Source code and live deployment available to employers on request: rheasuneelpandita@gmail.com',
+      techStack: [
+        { name: 'Python', logo: pythonLogo },
+        { name: 'FastAPI', logo: fastapiLogo },
+        { name: 'Docker', logo: dockerLogo },
+      ]
+    },
     /*
      {
       title: 'Engagement-Aware Movie Recommendation System',
@@ -237,7 +310,7 @@ const Portfolio = () => {
       ]
     },
     */
-    {
+    /*{
       title: 'ICU Deterioration Prediction System',
       description: 'An interpretable multimodal ML system for early ICU respiratory failure prediction, combining clinical notes, lab trends, and chest X-ray embeddings across 91K patient stays.',
       image: grids,
@@ -250,7 +323,8 @@ const Portfolio = () => {
         { name: 'PyTorch', logo: pytorchLogo },
         { name: 'scikit-learn', logo: scikitLogo },
       ]
-    },
+    }*/
+    /*,
     {
       title: 'Wordle with Hints',
       description: 'This project is inspired by two games - Wordle and Pimantle. The user must guess the word within 7 tries with 3 hints. We used word and sentence embeddings to create associations between words, their meanings and other words for the hints. NOTE: I am working on updating this codebase.' ,
@@ -264,13 +338,24 @@ const Portfolio = () => {
         { name: 'scikit-learn', logo: scikitLogo }
       ]
     }
+      */
   ];
 
   const heroStyle = {
     backgroundImage: `url(${backgroundImage})`
   };
 
-  const experiences = [
+  type Experience = {
+  role: string;
+  company: string;
+  logo: string;
+  startDate: string;
+  endDate: string;
+  bullets: string[];
+  link?: string;
+};
+
+  const experiences: Experience[] = [
     {
       role: 'Graduate Research Assistant',
       company: 'USC Center for the Neuroscience of Embodied Cognition (CeNEC, A-Z Lab)',
@@ -342,11 +427,11 @@ const Portfolio = () => {
                 {section}
               </button>
             ))}
-            <button
-              onClick={handleResumeDownload}
-              className="nav-link"
-            >
-              resume
+            <button onClick={() => handleResumeDownload('ai')} className="nav-link">
+              resume (AI/ML)
+            </button>
+            <button onClick={() => handleResumeDownload('swe')} className="nav-link">
+              resume (SWE/FDE)
             </button>
           </div>
         </div>
@@ -362,7 +447,7 @@ const Portfolio = () => {
             />
           </div>
           <h1 className="hero-name">Rhea Pandita</h1>
-          <h3>MSCS@University of Southern California|Graduate Research Assistant working on MLLMs | research-oriented ML/AI</h3>
+          <h3>MSCS @ University of Southern California | Graduate Research Assistant | LLM agents, evaluation & applied AI</h3>
           <div className="hero-quote">
             "Turning data into decisions"
           </div>
@@ -381,17 +466,21 @@ const Portfolio = () => {
           <div className="about-content">
             <h2 className="section-title">Hey There!<img src={WavingHandGif} alt="waving hand" className="wave-emoji" /> </h2>
             <p className="about-text">
-              I’m a Master’s student in Computer Science who wants to build reliable and interpretable AI systems.
-              I'm interested in research opportunities where I learn more about and focus on <u>understanding and improving the reasoning behaviour of LLMs</u> through
-              empirical evaluation, robustness testing and benchmarking.
+              I'm a Master's student in Computer Science who builds AI systems that hold up in
+              production: agents, retrieval pipelines and evaluation infrastructure. I care most
+              about the gap between a system that demos well and one people can actually rely on,
+              which usually comes down to knowing how it fails.
             </p>
             <br />
             <p className="about-text">
-              As a Graduate Research Assistant at the USC CeNEC Lab, I benchmark LLMs on causal and predictive reasoning tasks over human-action videos to study their current limitations.
+              As a Graduate Research Assistant at the USC CeNEC Lab, I build the inference and
+              evaluation infrastructure used to benchmark frontier and open-weight models on
+              causal and predictive reasoning over human-action video.
             </p>
             <br />
             <p className="about-text">
-              <b>Interests:</b> <u>Machine Learning, NLP, LLM evaluation and data-driven AI systems.</u>
+              <b>Interests:</b> <u>LLM agents, retrieval systems, model evaluation, and shipping
+              AI into real workflows.</u>
             </p>
             <br />
             <p className="about-text">
@@ -451,18 +540,30 @@ const Portfolio = () => {
                     </div>
                   )}
                   <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
-                      <Github size={24} />Github
-                    </a>
+                    {project.github && (
+                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
+                        <Github size={24} />Github
+                      </a>
+                    )}
                     {project.demo && (
                       <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link">
                         🌐 Live Demo
+                      </a>
+                    )}
+                    {project.demoVideo && (
+                      <a href={project.demoVideo} target="_blank" rel="noopener noreferrer" className="project-link">
+                        ▶️ Watch Demo
                       </a>
                     )}
                     {project.originalRepo && (
                       <a href={project.originalRepo} target="_blank" rel="noopener noreferrer" className="project-link" style={{ fontSize: '0.8rem', opacity: 0.7 }}>
                         <Github size={18} />Original Repo
                       </a>
+                    )}
+                    {project.accessNote && (
+                      <p style={{ fontSize: '0.78rem', opacity: 0.75, width: '100%', margin: '8px 0 0' }}>
+                        {project.accessNote}
+                      </p>
                     )}
                   </div>
                 </div>
