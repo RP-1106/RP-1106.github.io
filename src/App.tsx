@@ -51,7 +51,7 @@ import capstone from './components/images/capstone.png';
 import grids from './components/images/GRIDS-output.png';
 /*import movierec from './components/images/movie-recommendation.png';*/
 import streamora from './components/images/streamora-thumbnail.png';
-import multiagent from './components/images/multiagent-logo1.png';
+import multiagent from './components/images/agentic-hw2-thumbnail.png';
 import mcpagent from './components/images/mcpserver-logo2.png';
 import redisLogo from './components/images/redis-logo.png';
 import typescriptLogo from './components/images/typescript-logo.png';
@@ -222,15 +222,16 @@ const Portfolio = () => {
   const projects: Project[] = [
     {
     title: 'Multi-Agent Immigration Policy Assistant',
-    description: 'A LangGraph supervisor routing research, data and summary agents over a Chroma index of 17 federal regulatory sources, with LLM routing across Gemini Flash and GPT-5.4 and traced fallback when a provider fails. Scored 0.95 faithfulness and 0.84–0.89 context precision on RAGAS across 24 reference-checked questions, at $0.003 per simple query. Caught a regulation that corpus-only answers presented as current but a court had blocked — and found that recency prompting had made the error worse.',
-    image: multiagent,              
-    /*demoVideo: 'https://youtu.be/YOUR-UNLISTED-ID',*/
+    description: 'A LangGraph supervisor routing research, data and summary agents over a Chroma index of 17 official U.S. government sources and 231K rows of USCIS H-1B data, with live web search via Tavily MCP. A cost-aware router sends 76% of LLM calls to Gemini Flash and complex reasoning to GPT-5.4, with traced fallback when a provider fails. Scored 0.95 faithfulness and 0.84–0.89 context precision on RAGAS across 24 reference-checked questions, at $0.003 per simple query. Caught a regulation that corpus-only answers presented as current but a court had blocked, and found that recency prompting had made the error worse.',
+    image: multiagent,
+    demoVideo: 'https://youtu.be/OBH2qOUX_tk',
     accessNote: 'Source code and live deployment available to employers on request: rheasuneelpandita@gmail.com',
     techStack: [
       { name: 'Python', logo: pythonLogo },
+      { name: 'LangGraph / LangChain', logo: langchainLogo },
       { name: 'FastAPI', logo: fastapiLogo },
       { name: 'Docker', logo: dockerLogo },
-      { name: 'Pandas', logo: pandasLogo },
+      { name: 'Google Cloud', logo: gcpLogo },
     ]
   },
     {
