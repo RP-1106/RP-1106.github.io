@@ -52,7 +52,7 @@ import grids from './components/images/GRIDS-output.png';
 /*import movierec from './components/images/movie-recommendation.png';*/
 import streamora from './components/images/streamora-thumbnail.png';
 import multiagent from './components/images/agentic-hw2-thumbnail.png';
-import mcpagent from './components/images/mcpserver-logo2.png';
+import mcpagent from './components/images/agentic-hw1-thumbnail.png';
 import redisLogo from './components/images/redis-logo.png';
 import typescriptLogo from './components/images/typescript-logo.png';
 import langchainLogo from './components/images/langchain-logo.png';
@@ -286,14 +286,16 @@ const Portfolio = () => {
     },
     {
       title: 'Tool-Using MCP Agent Service',
-      description: 'A LangGraph ReAct agent on Cloud Run reaching three MCP servers (filesystem over stdio, Tavily and GitHub over streamable HTTP) with per-server tool allowlists, bounded timeouts and retries, and a guard that classifies every failure mode. Covered by 18 offline tests including a purpose-built fault-injection server that crashes mid-call, disappears after discovery and returns schema-breaking results.',
-      image: mcpagent,               
-      /*demoVideo: 'https://youtu.be/YOUR-UNLISTED-ID',*/
+      description: 'A LangGraph ReAct agent on Cloud Run reaching three MCP servers (filesystem over stdio, Tavily and GitHub over streamable HTTP) with per-server tool allowlists (17 of 41 tools exposed), bounded timeouts and retries, and a guard that classifies every failure mode and hands it back to the model as a readable error. When a server is down, the agent falls back to the remaining tools. Covered by 18 offline tests including a purpose-built fault-injection server that crashes mid-call, disappears after discovery and returns schema-breaking results.',
+      image: mcpagent,
+      demoVideo: 'https://youtu.be/ro8vBPjgdzM',
       accessNote: 'Source code and live deployment available to employers on request: rheasuneelpandita@gmail.com',
       techStack: [
         { name: 'Python', logo: pythonLogo },
+        { name: 'LangGraph / LangChain', logo: langchainLogo },
         { name: 'FastAPI', logo: fastapiLogo },
         { name: 'Docker', logo: dockerLogo },
+        { name: 'Google Cloud', logo: gcpLogo },
       ]
     },
     /*
